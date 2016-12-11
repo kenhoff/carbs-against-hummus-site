@@ -1,0 +1,177 @@
+$cahBlack=#232323
+$cahGold=#f2c40f
+$cahDarkGold=#7a6308
+
+body {
+	font-family "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.content {
+	padding-top 5em;
+}
+
+nav
+	z-index: 100;
+	width: 100%
+	position: fixed;
+	height: 5em;
+	color: $cahBlack;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	.logo
+		height: 100%;
+		display: block;
+		& > img
+			display: block;
+			max-height: 100%;
+			width: auto;
+			padding: 0.25em;
+	.right
+		a
+			text-transform: uppercase;
+			letter-spacing: 0.25em;
+			color: $cahBlack
+			text-decoration: none;
+			&:hover
+				color: $cahBlack
+				text-decoration: none;
+			&.download
+				font-weight: bold;
+				border 5px solid $cahDarkGold
+				border-radius: 7px
+				padding: 0.5em;
+				color: $cahBlack
+				background-color: $cahGold
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		& > * {
+			padding: 1em;
+			margin: auto;
+			flex-grow: 1;
+			text-align: center;
+		}
+
+img
+	display: block
+	max-width: 100%
+	height: auto
+
+section
+	display: flex;
+	&.header
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 5em;
+		color: white;
+		background-color: $cahBlack
+		& h1
+			font-size: 5em;
+	&.how-to
+		flex-direction: column;
+		& > .instructions
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+			flex-wrap: wrap;
+			& > *
+				padding: 5em;
+			& > .left {
+				max-width: 27em;
+				padding: 3em;
+				font-size: 2em;
+				font-weight: bold;
+			}
+			& > .right {
+				max-width: 50em;
+			}
+
+
+	&.how-it-works, &.how-it-began
+		flex-direction: column;
+		background-color: $cahBlack;
+		color: white;
+		padding: 5em;
+		h1
+			font-size: 5em;
+		p
+			margin 1em 0
+			font-size: 2em;
+	&.meet-the-team
+		flex-direction: column;
+		background-color: white;
+		color: $cahBlack;
+		padding: 5em;
+		h1
+			font-size: 5em;
+		& > .person
+			margin: 2em 0
+			h2
+				margin-top: 0px
+			img
+				z-index: -100;
+				max-width: 300px;
+				padding-right: 3em;
+				height: auto;
+				float: left;
+				filter: grayscale(100%);
+
+.download
+	display: flex;
+	flex-direction: column;
+	margin-top: 2em;
+	& > a {
+		font-size: 2em;
+		font-weight: bold;
+		display: inline-block;
+		margin: auto;
+		margin-bottom: 0.75em;
+		border 5px solid $cahDarkGold
+		border-radius: 7px
+		padding: 1em;
+		color: $cahBlack
+		background-color: $cahGold
+		color: $cahBlack
+	}
+	& > .coming-soon
+		font-style: italic;
+		text-align: center;
+		font-size: 1.5em;
+
+.download-button
+	margin: 0.5em 0;
+	font-size: 1.5em;
+	font-weight: bold;
+	border 5px solid $cahDarkGold
+	border-radius: 7px
+	padding: 1em;
+	color: $cahBlack
+	background-color: $cahGold
+	color: $cahBlack
+
+
+table
+	width: 100%;
+	color: inherit;
+	margin: 1em;
+	font-size: 1.5em;
+	& td, th
+		padding: 0.5em;
+
+.nascar
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 2em;
+	& > a
+		color: $cahBlack
+		text-decoration: none;
+		margin: 1em;

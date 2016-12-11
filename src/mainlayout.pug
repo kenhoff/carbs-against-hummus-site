@@ -1,0 +1,35 @@
+html
+	head
+		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		link(rel="stylesheet" href="/style.css")
+		link(rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css")
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		meta(charset="utf-8")
+		title Carbs Against Hummus
+		script.
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-88631460-1', 'auto');
+			ga('send', 'pageview');
+
+	body
+		nav
+			.left
+				a(href="/").logo
+					img(src="/CAH_logo_big.jpg")
+			.right
+				a(href="/CarbsAgainstHummus.pdf" target="_blank").download Download
+				a(href="/how-it-works.html") How it works
+				a(href="/about.html") About
+		.content
+			block content
+		.download
+			a(href="/CarbsAgainstHummus.pdf") Download Edition 1.0
+			p.coming-soon Coming soon: Carbs Against Hummus, Edition 2!
+			p.coming-soon Created and voted on by you!
+		.nascar
+			a(href="https://www.instagram.com/carbsagainsthummus/" target="_blank"): i.fa.fa-instagram.fa-3x
+			a(href="https://twitter.com/carbsgnsthummus" target="_blank"): i.fa.fa-twitter.fa-3x
